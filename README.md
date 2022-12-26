@@ -2,6 +2,12 @@
 
 An Simple Secret Number Guessing game created with HTML CSS and ReactJS.
 
+# Tech Stack
+
+- HTML
+- CSS
+- REACTJS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
