@@ -1,7 +1,12 @@
 import "./App.css";
+import { userInput } from "./component/userInput";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <userInput />
+    </div>
+  );
 }
 
 export default App;
