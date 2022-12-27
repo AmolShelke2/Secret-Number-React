@@ -13,10 +13,22 @@ const UserInput = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    setUserGuessNumber("");
+    if (userGuessNumber === "") {
+      alert("Add a valid number");
+      return;
+    } else {
+      setUserGuessNumber("");
+    }
+
+    if (userGuessNumber === secretNumber) {
+      console.log("You guess the secret number");
+    } else if (secretNumber < userGuessNumber) {
+      console.log("You guess the secret number too high");
+    } else if (secretNumber > userGuessNumber) {
+      console.log("You guess the secret number too low");
+    }
   };
 
-  console.log(userGuessNumber);
   return (
     <div className="user-guess-number">
       <form onSubmit={submitHandler}>
