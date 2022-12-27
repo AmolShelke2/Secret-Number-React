@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
+const secretNumber = Math.ceil(Math.random() * 100);
+
 const UserInput = () => {
   const [userGuessNumber, setUserGuessNumber] = useState("");
   // const [secretNumber, setSecretNumber] = useState("");
-
-  const secretNumber = Math.ceil(Math.random() * 100);
-  console.log(secretNumber);
 
   const onChangeHanlder = (e) => {
     setUserGuessNumber(+e.target.value);
